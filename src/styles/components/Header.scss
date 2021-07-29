@@ -1,0 +1,51 @@
+.header {
+  height: 3rem;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+
+  .header__logo {
+    margin: 0.5rem 1rem;
+    a {
+      color: white;
+      text-decoration: none;
+
+      h2 {
+        font-weight: 400;
+      }
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0.8rem 1rem;
+
+    li {
+      margin: 0 1.7rem;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+  }
+
+  .header__mobile__menu {
+    display: none;
+  }
+}
+
+@media screen and(max-width: 39.937rem) {
+  .header {
+    ul {
+      display: none;
+    }
+    .header__mobile__menu {
+      display: flex;
+      color: gray;
+      height: 2rem;
+      margin: 0.5rem 0.5rem;
+    }
+  }
+}

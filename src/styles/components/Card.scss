@@ -1,0 +1,111 @@
+.card {
+  background-color: rgb(255, 255, 255);
+  box-shadow: 4px 4px 10px #70807c;
+  width: 20rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+  padding: 1.2rem;
+  border-radius: 0.4rem;
+
+  .card__heading {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+    span {
+      height: 1.5rem;
+      color: white;
+      text-transform: capitalize;
+      background-color: #be8959;
+      padding: 0.2rem 0.1rem;
+      margin: 0.2rem 0.3rem;
+      border-radius: 12%;
+    }
+  }
+
+  .card__temp {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0.5rem;
+
+    .main__temp {
+      font-size: 3.2rem;
+      margin-right: 0.5rem;
+    }
+  }
+
+  .card__add {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 80%;
+    margin: 0.5rem;
+
+    .card__add__left {
+      display: flex;
+      flex-direction: column;
+      .icon {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 0.2rem;
+        svg {
+          margin-right: 1rem;
+        }
+        .humidity {
+          font-size: 2rem;
+          color: aqua;
+        }
+
+        .wind {
+          font-size: 2rem;
+          color: green;
+        }
+
+        p {
+          font-size: 1.2rem;
+          margin-top: 0.2rem;
+        }
+      }
+    }
+    .card__add__line {
+      border-right: 2px solid rgb(167, 165, 165);
+      height: 3.5rem;
+      margin-top: 0.3rem;
+      margin-right: 2rem;
+    }
+
+    .sun__icon {
+      svg {
+        font-size: 4rem;
+        color: rgb(187, 187, 6);
+      }
+    }
+  }
+
+  .maps__link {
+    background-color: red;
+    padding: 0.4rem 0.5rem;
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+
+    .maps__icon {
+      height: 1.4rem;
+      margin-right: 0.2rem;
+    }
+    a {
+      align-items: center;
+      text-decoration: none;
+      color: white;
+      padding-top: 0.25rem;
+      font-size: small;
+    }
+  }
+}
