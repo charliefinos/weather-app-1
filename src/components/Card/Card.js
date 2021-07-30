@@ -1,6 +1,5 @@
 import React from 'react'
 import data from '../../data'
-import '../../styles/components/Card.scss'
 import Heading from './Heading'
 import Temperature from './Temperature'
 import Info from './Info'

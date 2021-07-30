@@ -1,13 +1,13 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
-import '../styles/components/Header.scss'
+import logo from '../assets/logo.svg'
 
 const Header = ({ navbarToggle }) => {
   return (
     <nav className='header'>
       <div className='header__logo'>
         <Link to='/'>
-          <h2>Weather-App</h2>
+          <img alt='' src={logo} />
         </Link>
       </div>
       <ul>

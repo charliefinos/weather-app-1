@@ -1,3 +1,5 @@
+@import "../breakpoints";
+
 .card {
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 10px #70807c;
@@ -10,12 +12,20 @@
   padding: 1.2rem;
   border-radius: 0.4rem;
 
+  @include breakpoint(medium) {
+    width: 30rem;
+  }
+
   .card__heading {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     margin: 0.5rem;
+
+    h2 {
+      font-weight: 300;
+    }
     span {
       height: 1.5rem;
       color: white;

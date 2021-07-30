@@ -1,0 +1,26 @@
+// Components
+@import "./styles/components/Card.scss";
+@import "./styles/components/Dropdown.scss";
+@import "./styles/components/Header.scss";
+
+// Typography
+@import "./styles/typography";
+
+// Breakpoints
+@import "./styles/breakpoints";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
