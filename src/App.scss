@@ -2,6 +2,8 @@
 @import "./styles/components/Card.scss";
 @import "./styles/components/Dropdown.scss";
 @import "./styles/components/Header.scss";
+@import "./styles/components/Button.scss";
+@import "./styles/components/SearchBox.scss";
 
 // Typography
 @import "./styles/typography";
@@ -13,10 +15,23 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-size: 1.1rem;
 }
 
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: "Poppins", sans-serif;
+}
+
+h1 {
+  margin: 0.5rem 0;
+}
+
+h2,
+h3 {
+  margin: 0.5rem 0;
+  color: #797979;
+  font-weight: 400;
+  text-transform: uppercase;
 }
 
 .container {
