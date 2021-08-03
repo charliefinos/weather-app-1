@@ -1,11 +1,11 @@
 import React from 'react'
 
-const Button = ({ children, clickHandler, x }) => {
+const Button = ({ children, fetchHandler, x }) => {
 
   return (
     <div className='button'>
       <button onClick={() => {
-        clickHandler(x)
+        fetchHandler(x)
       }}>{children}</button>
     </div>
   )
