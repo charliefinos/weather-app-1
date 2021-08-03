@@ -16,7 +16,7 @@ const Home = ({ data }) => {
     getWeather(x).then(setWeather).catch('Not found')
   }
   const clickHandler = (x) => {
-    console.log(x)
+
     setCity(x)
   }
 
@@ -24,7 +24,7 @@ const Home = ({ data }) => {
     if (city !== '') {
       history.push(`/${city}`)
     }
-  })
+  }, [city, history])
 
   return (
     <div className='container home'>
