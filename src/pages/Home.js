@@ -29,6 +29,7 @@ const Home = () => {
       .then((data) => {
         setLoading(false)
         setAppState(data)
+        console.log(data)
       })
       .catch((error) => {
         console.error(error)

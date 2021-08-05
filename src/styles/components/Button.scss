@@ -8,10 +8,11 @@
     color: white;
     text-transform: uppercase;
     font-size: 1rem;
-    transition: 0.3s;
+    transition: 0.5s;
     margin: 0.3rem 0;
     align-items: center;
     justify-content: center;
+    cursor: pointer;
     &:hover {
       transform: translateY(-5%);
       transition: 0.5s;

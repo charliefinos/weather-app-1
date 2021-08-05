@@ -1,9 +1,11 @@
 import React from 'react'
 import moon from '../../assets/bi_moon-stars.svg'
+import sun from '../../assets/sun.svg'
 import { GiWaterDrop } from 'react-icons/gi'
 import { FaWind } from 'react-icons/fa'
 
-const CardInfo = ({ data }) => {
+const CardInfo = ({ data, isDay }) => {
+
   return (
     <div className='card__add'>
       <div className='card__add__left'>
@@ -13,11 +15,14 @@ const CardInfo = ({ data }) => {
         </div>
         <div className='icon'>
           <div><FaWind className='icon wind' /></div>
-          <div><p>{data.wind.speed}m/s</p></div>
+          <div><p>{data.wind.speed} m/s</p></div>
         </div>
       </div>
       <div className='card__add__line'></div>
-      <div className='sun__icon'><img alt='' src={moon}></img></div>
+      <div className='sun__icon'>
+
+        <img alt='' src={isDay ? sun : moon}></img>
+      </div>
     </div>
   )
 }

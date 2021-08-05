@@ -3,17 +3,17 @@
 .card {
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 10px #70807c;
-  width: 20rem;
+  width: 90vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 2rem;
   padding: 1.2rem;
+  margin-top: 1rem;
   border-radius: 0.4rem;
 
   @include breakpoint(medium) {
-    width: 30rem;
+    width: 25rem;
   }
 
   .card__heading {
@@ -31,7 +31,7 @@
       color: white;
       text-transform: capitalize;
       background-color: #be8959;
-      padding: 0.2rem 0.1rem;
+      padding: 0 0.1rem;
       margin: 0.2rem 0.3rem;
       border-radius: 12%;
     }
@@ -45,8 +45,15 @@
     margin: 0.5rem;
 
     .main__temp {
-      font-size: 3.2rem;
+      font-size: 3.5rem;
       margin-right: 0.5rem;
+    }
+
+    .min__max {
+      p {
+        color: #70807c;
+        font-size: 1rem;
+      }
     }
   }
 
@@ -67,19 +74,23 @@
         svg {
           margin-right: 1rem;
         }
+
         .humidity {
-          font-size: 2rem;
-          color: aqua;
+          font-size: 1.8rem;
+          color: #4c99aa;
         }
 
         .wind {
-          font-size: 2rem;
-          color: green;
+          font-size: 1.8rem;
+          color: #5c9267;
         }
 
         p {
-          font-size: 1.2rem;
+          color: #70807c;
+          font-size: 1.1rem;
           margin-top: 0.2rem;
+          margin-left: 0;
+          padding-left: 0;
         }
       }
     }
@@ -99,7 +110,7 @@
   }
 
   .maps__link {
-    background-color: red;
+    background-color: #8f4b4b;
     padding: 0.4rem 0.5rem;
     display: flex;
     flex-direction: row;
