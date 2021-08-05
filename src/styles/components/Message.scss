@@ -1,0 +1,15 @@
+.message {
+  border: 2px solid greenyellow;
+  width: 60%;
+  max-width: 20rem;
+  margin-top: 3rem;
+  padding: 0.6rem;
+  p {
+    text-align: center;
+    text-transform: capitalize;
+    padding-bottom: 0.3rem;
+  }
+  button {
+    margin: auto;
+  }
+}
