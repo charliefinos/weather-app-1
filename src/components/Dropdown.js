@@ -7,7 +7,7 @@ const Dropdown = ({ toggle, navbarToggle }) => {
     <div onClick={navbarToggle} className={`${toggle ? 'show' : 'hide'}`} >
       <ul>
         <li>
-          <Link to='/about'>About</Link>
+          <a href='https://www.carlosfinos.com' >Portfolio</a>
         </li>
       </ul>
     </div >

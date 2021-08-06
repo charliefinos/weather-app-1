@@ -4,7 +4,7 @@ import Card from '../components/Card/Card'
 import Button from '../components/Button'
 import Message from '../components/Message'
 import SearchBox from '../components/SearchBox'
-import cities from '../citys'
+
 
 const Home = () => {
   const history = useHistory()
@@ -15,6 +15,7 @@ const Home = () => {
 
   const [appState, setAppState] = useState({ city: null })
   const [loading, setLoading] = useState(false)
+  const [cities] = useState(["london", "new york", "tokyo"])
 
   const { cod, message } = appState
 
@@ -34,7 +35,7 @@ const Home = () => {
       .catch((error) => {
         console.error(error)
       })
-  }, [])
+  }, [defaultApiUrl])
 
   return (
     <div className='container home'>
@@ -42,16 +43,16 @@ const Home = () => {
 
       <h3>Please Search for a City:</h3>
       <SearchBox />
-      {console.log(appState, loading)}
-
 
       <h3>Or choose one:</h3>
-      {cities.map(x => (
-        <Button key={x} x={x} fetchHandler={fetchHandler}>{x}</Button>
-      ))}
+      <div className='buttons'>
+        {cities.map(x => (
+          <Button key={x} x={x} fetchHandler={fetchHandler}>{x}</Button>
+        ))}
+      </div>
 
       {loading ? (
-        <p>loading...</p>
+        <p>Loading...</p>
       ) : (
         cod === 200 ? <Card appState={appState} /> : <Message>{message} {cod}</Message>
       )}

@@ -1,11 +1,12 @@
 import React, { useState } from 'react';
 import { Switch, Route } from 'react-router-dom'
 import Home from './pages/Home'
-import About from './pages/About';
 import Header from './components/Header';
+import Footer from './components/Footer';
 import Dropdown from './components/Dropdown'
 import './App.scss'
 import City from './pages/City';
+
 
 
 function App() {
@@ -23,9 +24,9 @@ function App() {
         <Switch>
           <Route path='/' component={Home} exact />
           <Route path='/:id' component={City} exact />
-          <Route path='/info/about' component={About} />
         </Switch>
       </main>
+      <Footer />
     </div>
   );
 }

@@ -1,4 +1,7 @@
+@import "../breakpoints";
+
 .button {
+  margin: 0.7rem;
   button {
     height: 27px;
     width: 109px;
@@ -17,5 +20,10 @@
       transform: translateY(-5%);
       transition: 0.5s;
     }
+  }
+}
+@include breakpoint-down(small) {
+  .button {
+    margin: 0.1rem;
   }
 }

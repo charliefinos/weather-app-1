@@ -11,7 +11,7 @@ const CardInfo = ({ data, isDay }) => {
       <div className='card__add__left'>
         <div className='icon'>
           <div><GiWaterDrop className='icon humidity' /></div>
-          <div><p>{data.main.humidity}%</p></div>
+          <div><p>{data.main.humidity} %</p></div>
         </div>
         <div className='icon'>
           <div><FaWind className='icon wind' /></div>

@@ -12,7 +12,7 @@ const Header = ({ navbarToggle }) => {
       </div>
       <ul>
         <li>
-          <Link to='/about'>About</Link>
+          <a href='https://www.carlosfinos.com' target='_blank' rel='noreferrer'>Portfolio</a>
         </li>
       </ul>
       <div onClick={navbarToggle} className='header__mobile__menu'>

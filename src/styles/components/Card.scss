@@ -3,7 +3,7 @@
 .card {
   background-color: rgb(255, 255, 255);
   box-shadow: 4px 4px 10px #70807c;
-  width: 90vw;
+  width: 80vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -11,10 +11,6 @@
   padding: 1.2rem;
   margin-top: 1rem;
   border-radius: 0.4rem;
-
-  @include breakpoint(medium) {
-    width: 25rem;
-  }
 
   .card__heading {
     display: flex;
@@ -25,9 +21,11 @@
 
     h2 {
       font-weight: 300;
+      font-size: 1rem;
     }
     span {
       height: 1.5rem;
+      font-size: 1rem;
       color: white;
       text-transform: capitalize;
       background-color: #be8959;
@@ -45,14 +43,14 @@
     margin: 0.5rem;
 
     .main__temp {
-      font-size: 3.5rem;
+      font-size: 2.8rem;
       margin-right: 0.5rem;
     }
 
     .min__max {
       p {
         color: #70807c;
-        font-size: 1rem;
+        font-size: 0.8rem;
       }
     }
   }
@@ -61,7 +59,7 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 80%;
+    width: 90%;
     margin: 0.5rem;
 
     .card__add__left {
@@ -76,18 +74,18 @@
         }
 
         .humidity {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           color: #4c99aa;
         }
 
         .wind {
-          font-size: 1.8rem;
+          font-size: 1.6rem;
           color: #5c9267;
         }
 
         p {
           color: #70807c;
-          font-size: 1.1rem;
+          font-size: 1rem;
           margin-top: 0.2rem;
           margin-left: 0;
           padding-left: 0;
@@ -111,22 +109,68 @@
 
   .maps__link {
     background-color: #8f4b4b;
-    padding: 0.4rem 0.5rem;
+    padding: 0.2rem 0.5rem;
     display: flex;
     flex-direction: row;
     margin-top: 1rem;
-    border-radius: 0.5rem;
+    border-radius: 0.3rem;
 
     .maps__icon {
-      height: 1.4rem;
+      color: rgb(138, 137, 137);
+      height: 1.3rem;
       margin-right: 0.2rem;
     }
     a {
       align-items: center;
       text-decoration: none;
       color: white;
-      padding-top: 0.25rem;
-      font-size: small;
+      padding-top: 0.3rem;
+      font-size: 0.6rem;
+    }
+  }
+}
+
+@include breakpoint(medium) {
+  .card {
+    width: 25rem;
+  }
+}
+
+@include breakpoint-down(small) {
+  .card {
+    padding-bottom: 0.5rem;
+    font-size: 0.5rem;
+    width: 85vw;
+    .card__heading {
+      margin: 0;
+    }
+
+    .card__temp {
+      .main__temp {
+        font-size: 2.2rem;
+        font-weight: 500;
+      }
+    }
+    .card__add {
+      width: 100%;
+      .card__add__left {
+        font-size: 2rem;
+        .icon {
+          .humidity {
+            font-size: 1.3rem;
+            margin: 0.3rem 0 0.2rem 0;
+          }
+
+          .wind {
+            font-size: 1.3rem;
+            margin: 0.3rem 0 0.3rem 0;
+          }
+          p {
+            font-size: 0.95rem;
+            margin-left: 0.4rem;
+          }
+        }
+      }
     }
   }
 }
