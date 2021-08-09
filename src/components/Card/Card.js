@@ -14,7 +14,7 @@ const Card = ({ appState }) => {
     const nowTime = new Date().getHours()
 
     console.log(sunriseTime, sunsetTime)
-    const dayTime = nowTime > sunriseTime && nowTime < sunsetTime
+    const dayTime = nowTime >= sunriseTime && nowTime <= sunsetTime
 
     return dayTime
   }, [appState])
